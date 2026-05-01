@@ -9,7 +9,7 @@ import { AdminDashboard } from './components/AdminDashboard';
 import { Transaction } from './components/TransactionHistory';
 import { CreateAccountData, CreateAccountModal } from './components/CreateAccountModal';
 import { IstTime } from './components/IstTime';
-import { NeoVaultLogo } from './components/NeoVaultLogo';
+import { DigibankLogo } from './components/DigibankLogo';
 import { useLocalStorage } from './hooks/useLocalStorage';
 
 const istTxDate = () =>
@@ -99,7 +99,7 @@ export default function App() {
   const [loginError, setLoginError] = useState('');
 
   // Create account state
-  const [isCreatingAccount, setIsCreatingAccount] = useState(false);
+  const [isCreatingAccount, setIsCreatingAccount] = useState(true);
   const [openAccountData, setOpenAccountData] = useState<CreateAccountData>({
     name: '',
     accountType: 'savings',
@@ -255,10 +255,10 @@ export default function App() {
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-2xl flex items-center justify-center" style={{ background: 'var(--card)', border: '1px solid var(--border)', boxShadow: '0 2px 12px color-mix(in srgb, var(--primary) 12%, transparent)' }}>
-                  <NeoVaultLogo className="w-7 h-7" cutoutColor="var(--background)" />
+                  <DigibankLogo className="w-7 h-7" cutoutColor="var(--background)" />
                 </div>
                 <div>
-                  <p className="leading-none" style={{ fontSize: '1rem', fontWeight: 700 }}>NeoVault Bank</p>
+                  <p className="leading-none" style={{ fontSize: '1rem', fontWeight: 700 }}>Digibank</p>
                   <p className="text-xs text-muted-foreground mt-1">Open an Account</p>
                 </div>
               </div>
@@ -320,10 +320,10 @@ export default function App() {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: 'var(--card)', border: '1px solid var(--border)', boxShadow: '0 2px 12px color-mix(in srgb, var(--primary) 12%, transparent)' }}>
-                <NeoVaultLogo className="w-8 h-8" cutoutColor="var(--background)" />
+                <DigibankLogo className="w-8 h-8" cutoutColor="var(--background)" />
               </div>
               <div>
-                <p className="leading-none" style={{ fontSize: '1.2rem', fontWeight: 700 }}>NeoVault Bank</p>
+                <p className="leading-none" style={{ fontSize: '1.2rem', fontWeight: 700 }}>Digibank</p>
                 <p className="text-xs text-muted-foreground mt-1">Secure Login</p>
               </div>
             </div>
@@ -380,10 +380,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-2 sm:gap-4">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-2xl flex items-center justify-center" style={{ background: 'var(--card)', border: '1px solid var(--border)', boxShadow: '0 2px 12px color-mix(in srgb, var(--primary) 12%, transparent)' }}>
-              <NeoVaultLogo className="w-7 h-7" cutoutColor="var(--background)" />
+              <DigibankLogo className="w-7 h-7" cutoutColor="var(--background)" />
             </div>
             <div>
-              <h1 className="leading-none" style={{ fontSize: '1.1rem', fontWeight: 700 }}>NeoVault Bank</h1>
+              <h1 className="leading-none" style={{ fontSize: '1.1rem', fontWeight: 700 }}>Digibank</h1>
               <p className="text-xs text-muted-foreground mt-0.5">Welcome, {syncedCurrentUser.name}</p>
             </div>
           </div>
@@ -432,9 +432,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between flex-wrap gap-3">
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-lg flex items-center justify-center border" style={{ background: 'var(--card)' }}>
-              <NeoVaultLogo className="w-5 h-5" cutoutColor="var(--background)" />
+              <DigibankLogo className="w-5 h-5" cutoutColor="var(--background)" />
             </div>
-            <span className="text-sm text-muted-foreground" style={{ fontWeight: 500 }}>NeoVault Bank</span>
+            <span className="text-sm text-muted-foreground" style={{ fontWeight: 500 }}>Digibank</span>
           </div>
           <p className="text-xs text-muted-foreground">LLT-1 Application Development Project &mdash; All rights reserved</p>
         </div>

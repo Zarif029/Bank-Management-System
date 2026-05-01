@@ -1,13 +1,13 @@
 /**
- * NeoVault mark: sleek hexagonal shield with "NV" cut, premium dark-theme design.
+ * Digibank mark: sleek hexagonal shield with "D" cut, premium dark-theme design.
  * Matches --primary: #ff6b35 orange accent with dark gradient.
  */
-type NeoVaultLogoProps = {
+type DigibankLogoProps = {
   className?: string;
   cutoutColor?: string;
 };
 
-export function NeoVaultLogo({ className = 'w-10 h-10', cutoutColor = 'var(--card)' }: NeoVaultLogoProps) {
+export function DigibankLogo({ className = 'w-10 h-10', cutoutColor = 'var(--card)' }: DigibankLogoProps) {
   return (
     <svg
       className={className}
@@ -16,7 +16,7 @@ export function NeoVaultLogo({ className = 'w-10 h-10', cutoutColor = 'var(--car
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
     >
-      <title>NeoVault</title>
+      <title>Digibank</title>
       <defs>
         {/* Dark body gradient */}
         <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -71,14 +71,9 @@ export function NeoVaultLogo({ className = 'w-10 h-10', cutoutColor = 'var(--car
         strokeOpacity="0.2"
       />
 
-      {/* "N" letter shape */}
+      {/* "D" letter shape */}
       <g filter="url(#innerGlow)" fill="#ff6b35">
-        <path d="M28 35 L28 65 L34 65 L34 46 L46 65 L52 65 L52 35 L46 35 L46 54 L34 35 Z" />
-      </g>
-
-      {/* "V" letter shape */}
-      <g filter="url(#innerGlow)" fill="#ff8c5a">
-        <path d="M53 35 L62 62 L66 62 L75 35 L69 35 L64 55 L59 35 Z" />
+        <path d="M 35 32 L 35 68 L 48 68 C 62 68 68 60 68 50 C 68 40 62 32 48 32 Z M 42 39 L 48 39 C 55 39 59 43 59 50 C 59 57 55 61 48 61 L 42 61 Z" />
       </g>
 
       {/* Top highlight reflection */}
